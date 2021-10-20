@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  /* margin-left: 80px;
+  margin-top: 20px; */
+}
+img {
+  border-radius: 3.125em;
+}
+
+.main-container {
+  display: grid;
+  max-width: 75em;
+  margin: 0.625em auto;
+  padding: 0 0.625em;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1.25em;
+}
+
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 6.25em;
+  background-size: 6.5em 7.5em;
+  grid-column: 1 / span 2;
+  padding: 1.25em;
+  border-radius: 0.3125em;
+}
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  padding: 1.25em;
+  border-radius: 0.3125em;
+}
+.harmon {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.25em;
+  border-radius: 0.3125em;
+}
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2 / span 2;
+  padding: 1.25em;
+  border-radius: 0.3125em;
+}
+
+.kira {
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  padding: 1.25em;
+  padding-bottom: 0;
+  border-radius: 0.3125em;
+}
+.pname {
+  color: hsl(0, 0%, 81%);
+}
+.pgrad {
+  color: hsla(0, 0%, 81%, 50%);
+}
+.pmain {
+  color: hsl(0, 0%, 81%);
+  margin: 0.625em 0;
+  font-size: 1.25em;
+}
+.preview {
+  color: hsla(0, 0%, 81%, 70%);
+}
+.name {
+  color: hsl(217, 19%, 35%);
+}
+.grad {
+  color: hsla(217, 19%, 35%, 50%);
+}
+.main {
+  color: hsl(217, 19%, 35%);
+  margin: 1.25em 0;
+  font-size: 1.25em;
+}
+.review {
+  color: hsla(217, 19%, 35%, 70%);
+}
+.flex-dan {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+.flex-jo {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+.flex-harm {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+.flex-pat {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+.flex-kira {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+.quotation {
+  margin-left: 6.25em;
+  width: 3.125em;
+  height: 3.125em;
+}
+
+@media screen and (max-width: 25em) {
+  .main-container {
+    width: 21.875em;
+    display: flex;
+    flex-direction: column;
+  }
+}
